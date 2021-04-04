@@ -1,40 +1,278 @@
-    
-.test {
+html {
+    height: 100%;
+}
 
-https://www.facebook.com/oxiggy 
-https://vk.com/oxiggy
-https://twitter.com/oxiggy
-https://www.instagram.com/oxiggy/
-https://oxiggy.tumblr.com/ 
-https://github.com/oxiggy
-https://www.youtube.com/channel/UCykqRP3EN0R-w2xl5AuXEHA
-https://www.twitch.tv/stream_cafe
-Шутка про хаб 
+body {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/bbackground.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+}
 
+::-webkit-scrollbar {
+    width: 16px;
+    background-color: #454545;
+}
 
-skype:oxiggy 
-discord:oxiggy#5357
-https://discord.gg/2nrN3eA
+::-webkit-scrollbar-thumb {
+    background-color: #97999B;
+    border: 4px solid #454545;
+    border-radius: 16px;
+}
 
-https://eu.diablo3.com/ru/profile/oxiggy-2286/career
-https://www.overbuff.com/players/pc/oxiggy-2286
-https://playoverwatch.com/ru-ru/career/pc/oxiggy-2286
-https://www.stormshield.one/save-the-world/stats/addvoid 
+:focus {
+    color: #F5DF4D;
+}
 
+::selection {
+    background-color: #454545;
+}
 
-https://coub.com/oxiggggy
-https://htmlacademy.ru/profile/oxiggy
-https://www.patreon.com/oxiggy/creators
-https://www.behance.net/oxiggy
-https://www.twitch.tv/oxiggy
+.selection_yellow::selection {
+    background-color: #F5DF4D;
+}
 
-https://github.com/FortAwesome/Font-Awesome/tree/master/svgs/regular 
+main {
+    padding: 12px;
+}
 
+li {
+    list-style: none;
+}
 
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/twitter.svg
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/github-alt.svg
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/github-square.svg
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/github.svg
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/behance-square.svg
-https://github.com/FortAwesome/Font-Awesome/blob/master/svgs/brands/behance.svg
+h1 {
+    color: white;
+    font-size: 20vh;
+    line-height: 100%;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    margin: 0;
+}
+
+.b-main__text {
+    font-family: 'Poiret One', cursive;
+    font-size: 2vh;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: white;
+    word-break: break-word;
+    margin-top: 3.5vh;
+    margin-bottom: 8vh;
+}
+
+.b-links {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.b-links__icon {
+    padding: 4px 6px;
+}
+
+.b-links__icon {
+    width: 4vh;
+    height: 4vh;
+    fill: #97999B;
+    opacity: 0.6;
+}
+
+.b-links__icon:hover {
+    fill: #F5DF4D;
+    opacity: 1;
+}
+
+#githubIcon {
+    position: relative;
+    top: -1px;
+}
+
+#discordIcon {
+    position: relative;
+    top: 2px;
+}
+
+#twitchIcon {
+    position: relative;
+    top: 1px;
+}
+
+.glitch {
+    position: relative;
+    display: inline-block;
+}
+
+.glitch:after {
+    clip: rect(0, 9999px, 0, 0);
+    content: attr(data-text);
+    top: 0;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: -1px 0 #ab77a9;
+    -webkit-animation: noise-anim 2s infinite linear alternate-reverse;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch:before {
+    clip: rect(0, 9999px, 0, 0);
+    content: attr(data-text);
+    top: 0;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 1px 0 #05d003;
+    -webkit-animation: noise-anim-2 3s infinite linear alternate-reverse;
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+.glitch:before {
+    transform: translateX(-1px);
+    text-shadow: 4px 0 #a10897;
+}
+.glitch:after {
+    transform: translateX(1px);
+    text-shadow: -4px 0 #05d003;
+}
+
+@keyframes noise-anim {
+    0% {
+        clip: rect(21px, 9999px, 57px, 0);
+    }
+    5% {
+        clip: rect(21px, 9999px, 80px, 0);
+    }
+    10% {
+        clip: rect(55px, 9999px, 69px, 0);
+    }
+    15.0% {
+        clip: rect(22px, 9999px, 55px, 0);
+    }
+    20% {
+        clip: rect(38px, 9999px, 69px, 0);
+    }
+    25% {
+        clip: rect(31px, 9999px, 84px, 0);
+    }
+    30.0% {
+        clip: rect(15px, 9999px, 28px, 0);
+    }
+    35% {
+        clip: rect(16px, 9999px, 100px, 0);
+    }
+    40% {
+        clip: rect(25px, 9999px, 10px, 0);
+    }
+    45% {
+        clip: rect(19px, 9999px, 19px, 0);
+    }
+    50% {
+        clip: rect(71px, 9999px, 35px, 0);
+    }
+    55.0% {
+        clip: rect(89px, 9999px, 21px, 0);
+    }
+    60.0% {
+        clip: rect(20px, 9999px, 34px, 0);
+    }
+    65% {
+        clip: rect(22px, 9999px, 61px, 0);
+    }
+    70% {
+        clip: rect(65px, 9999px, 28px, 0);
+    }
+    75% {
+        clip: rect(82px, 9999px, 47px, 0);
+    }
+    80% {
+        clip: rect(64px, 9999px, 11px, 0);
+    }
+    85.0% {
+        clip: rect(63px, 9999px, 28px, 0);
+    }
+    90% {
+        clip: rect(60px, 9999px, 60px, 0);
+    }
+    95% {
+        clip: rect(9px, 9999px, 90px, 0);
+    }
+    100% {
+        clip: rect(40px, 9999px, 62px, 0);
+    }
+}
+
+@keyframes noise-anim-2 {
+    0% {
+        clip: rect(77px, 9999px, 63px, 0);
+    }
+    5% {
+        clip: rect(7px, 9999px, 6px, 0);
+    }
+    10% {
+        clip: rect(82px, 9999px, 78px, 0);
+    }
+    15.0% {
+        clip: rect(85px, 9999px, 25px, 0);
+    }
+    20% {
+        clip: rect(93px, 9999px, 38px, 0);
+    }
+    25% {
+        clip: rect(70px, 9999px, 96px, 0);
+    }
+    30.0% {
+        clip: rect(41px, 9999px, 72px, 0);
+    }
+    35% {
+        clip: rect(39px, 9999px, 65px, 0);
+    }
+    40% {
+        clip: rect(36px, 9999px, 34px, 0);
+    }
+    45% {
+        clip: rect(84px, 9999px, 96px, 0);
+    }
+    50% {
+        clip: rect(99px, 9999px, 45px, 0);
+    }
+    55.0% {
+        clip: rect(37px, 9999px, 73px, 0);
+    }
+    60.0% {
+        clip: rect(63px, 9999px, 20px, 0);
+    }
+    65% {
+        clip: rect(55px, 9999px, 44px, 0);
+    }
+    70% {
+        clip: rect(58px, 9999px, 11px, 0);
+    }
+    75% {
+        clip: rect(61px, 9999px, 82px, 0);
+    }
+    80% {
+        clip: rect(60px, 9999px, 9px, 0);
+    }
+    85.0% {
+        clip: rect(37px, 9999px, 69px, 0);
+    }
+    90% {
+        clip: rect(32px, 9999px, 64px, 0);
+    }
+    95% {
+        clip: rect(63px, 9999px, 16px, 0);
+    }
+    100% {
+        clip: rect(47px, 9999px, 34px, 0);
+    }
 }
